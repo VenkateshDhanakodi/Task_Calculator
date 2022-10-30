@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline : none;
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+#title{
+    text-align: center;
+    color: #66B2B2;
+    padding: 1% 0;
+}
+#my-calc{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: auto;
+    margin: 0 auto;
+    background-color: black;
+    margin-top: 3%;
+    border-radius: 10px;
+}
+#top{
+    width: 100%;
+    height: 6em;
+    background-color: black;
+    border-top: 8px solid black;
+    text-align: center;
+    color: #47B5FF;
+    border-radius: 10px;
+}
+#result{
+    width: 95%;
+    height: 65%;
+    padding: 3% 3% 3% 3%;
+    font-size:x-large;
+    background-color: #FFFFFF;
+    text-align: end;
+    margin: 0 auto;
+    color: #160151;
+    background-color: #66B2B2;
+    border-color: transparent;
+}
+#history{
+    width: 95%;
+    height: 35%;
+    padding: 3% 3% 3% 0;
+    font-size:x-large;
+    background-color: #FFFFFF;
+    text-align: end;
+    margin: 0 auto;
+    color: #160151;
+    background-color: #66B2B2;
+    font-size: medium;
+}
+#numbers{
+    height: 18.75 em;
+    display: grid;
+    gap: 0.5em;
+    grid-template-columns: 22% 22% 22% 22%;
+    grid-template-rows: 3em 3em 3em 3em 3em;
+    justify-content: center;
+    padding: 2.5% 0 2.5% 0;
+    font-size: medium;
+    font-weight: 600;
+}
+#numbers button{
+    border: none;
+    background-color: #DFF6FF;
+    color: #256D85;
+    border-radius: 10px;
+}
+#numbers #clear{
+    background-color: #232055;
+    color: #FFFFFF;
+}
+#numbers #equal{
+    background-color: #232055;
+    color: #FFFFFF;
+}
+#numbers .heighlight:hover{
+    background-color: #66B2B2;
+    color: #232055;
+}
+#numbers #divide {
+    font-size: large;
+    font-weight: 700;
+    color: #232055;
+}
+#numbers #multiply {
+    font-size: medium;
+    font-weight: 800;
+    color: #232055;
+}
+#numbers #subtract {
+    font-size: medium;
+    font-weight: 700;
+    color: #232055;
+}
+#numbers #add{
+    font-size: medium;
+    font-weight: 600;
+    color: #232055;
+}
+#numbers #percentage{
+    font-size: medium;
+    font-weight: 700;
+    color: #232055;
+}
+#numbers #dot{
+    font-size: medium;
+    font-weight: 900;
+}
+#description{
+    width: 100%;
+    height: auto;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center ;
+    margin: 0 auto;
+    margin-top: 1%;
+    background-color: #DFF6FF;
+}
+#all-content{
+    width: 50%;
+    height: 80vh;
+}
+@media screen and (max-width:450px){
+    #all-content{
+        width: 95%;
+        height: 100vh;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #numbers{
+        width: 100%;
+        grid-template-columns: 22% 22% 22% 22%;    
+        grid-template-rows: 2em 2em 2em 2em 2em;
+    }
+    #title{
+        font-size: larger;
+    }
+    #my-calc{
+        margin-top: 25%;
+        width: 90%;
+    }    
+}
+@media screen and (min-width:450px){
+    #my-calc{
+        margin-top: 15%;
+    }    
+    #all-content{
+        height: 95%;
+        margin: 0  auto;
+        align-items: center;
+    }
+}
